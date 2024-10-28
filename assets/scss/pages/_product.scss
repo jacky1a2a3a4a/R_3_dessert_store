@@ -1,3 +1,15 @@
+.product-cover {
+  .h-277 {
+    height: 277px;
+  }
+
+  @media (min-width: 576px) {
+    .h-sm-496 {
+      height: 496px;
+    }
+  }
+}
+
 .list-group-item.active {
   background-color: $brand-light;
   border-color: $brand-light;
@@ -16,7 +28,7 @@
     font-weight: 300;
   }
 
-  .page-link:focus{
+  .page-link:focus {
     color: $white;
     background-color: $brand-dark;
     border-color: $brand-dark;
