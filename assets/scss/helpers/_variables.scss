@@ -1,0 +1,144 @@
+//colors
+$brand: #8da291;
+$brand-light: #eaf0ed;
+$brand-dark: #3f5d45;
+$sub-brand: #ffe180;
+$white: #ffffff;
+$tomato: tomato;
+
+//theme-colors
+$custom-theme-colors: (
+  "brand": $brand,
+  "brand-light": $brand-light,
+  "brand-dark": $brand-dark,
+  "sub-brand": $sub-brand,
+  "white": $white,
+  "tomato":$tomato,
+);
+//組合原生variables
+$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+//theme-colors
+
+//active negative margins
+$enable-negative-margins: true;
+//active negative margins
+
+//disable rounded
+$enable-rounded: false;
+//disable rounded
+
+$focus-ring-width: .25rem;
+$focus-ring-opacity: .25;
+$focus-ring-color: rgba($primary, $focus-ring-opacity);
+$focus-ring-blur: 0;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width red;
+
+//spacers
+$custom-spacers: (
+  sm: 1px,
+
+  0: 0,
+  1: $spacer * 0.25,
+  //4px
+  2: $spacer * 0.5,
+  //8px
+  3: $spacer,
+  //16px
+  4:$spacer * 1.25,
+  //20px
+  5: $spacer * 1.5,
+  //24px
+  6: $spacer * 2,
+  //32px
+  7: $spacer * 2.5,
+  //40px
+  8: $spacer * 3,
+  //48px
+  9: $spacer * 3.5,
+  //56px
+  10: $spacer * 4,
+  //64px
+  11: $spacer * 4.5,
+  //72px
+  12: $spacer * 5,
+  //80px
+  13: $spacer * 6,
+  //96px
+  14: $spacer * 7,
+  //112px
+  15: $spacer * 8,
+  //128px
+  16: $spacer * 9,
+  //144px
+);
+$spacers: map-merge($spacers, $custom-spacers);
+//spacers
+
+//custom position values
+$position-values: (
+  0: 0,
+  5:5%,
+  10:10%,
+  20: 20%,
+  50: 50%,
+  100: 100%
+);
+//custom position values
+
+// Typography
+$h1-font-size: 2.25rem ; // 36
+$h2-font-size: 1.5rem !important;  // 24
+$font-sizes: (
+  "1": 1rem,
+  // 16
+  "2": 1.25rem,
+  // 20
+  "3": 1.5rem,
+  // 24
+  "4": 1.75rem,
+  // 28
+  "5": 2rem,
+  // 32
+  "6": 2.25rem,
+  // 36
+  "7": 50px,
+);
+// Typography
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+// Grid breakpoints
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 768px,
+  lg: 940px,
+  xl: 1140px,
+);
+// Grid containers
+
+//custom letter-spacing utilities
+$letter-spacings: (
+  '0': 0,
+  'sm': 5px,
+  'lg': 8px
+);
+
+@mixin generate-letter-spacing-utilities($spacings) {
+  @each $name, $value in $spacings {
+    .ls-#{$name} {
+      letter-spacing: $value;
+    }
+  }
+}
+
+// 引用 Mixin，生成相關的 letter-spacing 類別
+@include generate-letter-spacing-utilities($letter-spacings);
+//custom letter-spacing utilities

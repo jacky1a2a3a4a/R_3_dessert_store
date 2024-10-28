@@ -1,0 +1,24 @@
+.login {
+  .btn-sns {
+    height: 56px;
+  }
+
+  .input-group-text,
+  .form-control {
+    color: $brand-dark;
+    background-color: $brand-light;
+    border: none;
+  }
+
+  .input-group-text {
+    padding: 16px 0 16px 20px;
+  }
+
+  .form-control {
+    padding: 17px 20px;
+  }
+
+  .form-control::placeholder {
+    color: $brand;
+  }
+}

@@ -1,0 +1,21 @@
+#checkout-success .checkout-success-cover {
+  background-image: url(../images/checkout-banner.png);
+  background-position: center;
+  background-size: cover;
+  height: 460px;
+}
+#checkout-success .progress-bar-custom {
+  position: relative;
+}
+#checkout-success .progress-bar-custom i {
+  position: relative;
+  z-index: 1;
+}
+#checkout-success .progress-bar-custom::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+}/*# sourceMappingURL=checkout-success.css.map */

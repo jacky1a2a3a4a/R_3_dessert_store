@@ -1,0 +1,33 @@
+.list-group-item.active {
+  background-color: $brand-light;
+  border-color: $brand-light;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+  background-color: $brand-light;
+  border-color: $brand-light;
+}
+
+.product-items {
+  .page-link {
+    color: $brand-dark;
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .page-link:focus{
+    color: $white;
+    background-color: $brand-dark;
+    border-color: $brand-dark;
+  }
+
+  .page-link-number {
+    padding: 18px;
+  }
+
+  .page-link-icon {
+    padding: 18px 26px;
+  }
+
+}

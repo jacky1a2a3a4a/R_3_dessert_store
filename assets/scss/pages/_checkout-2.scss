@@ -1,0 +1,117 @@
+.checkout-1 {
+
+  .form-label {
+    color: $brand-light;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .form-control,
+  .form-select {
+    color: $brand-dark;
+    background-color: $brand-light;
+    font-size: 16px;
+    padding: 17px 20px;
+  }
+
+  .form-control::placeholder {
+    color: $brand;
+  }
+
+  .order-summary {
+    //重置預設
+    margin: 0;
+    padding: 0;
+
+    li {
+      color: $brand;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+
+  .shopping-list {
+    //重置預設
+    margin: 0;
+    padding: 0;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 120px;
+      height: 80px;
+    }
+
+    li {
+      color: $brand;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+    }
+  }
+
+  //進度條容器
+  .progress-bar-custom {
+    position: relative;
+  }
+
+  //進度條槓槓
+  .progress-bar-custom::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1.5px;
+    text-align: center;
+    background-color: white;
+    transform: translateY(-50%);
+    z-index: 0;
+  }
+
+  .progress-bar-custom {
+    div {
+      position: relative;
+      background-color: $brand-dark;
+      border: 2px solid white;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .step-done {
+      background-color: white;
+    }
+  }
+
+  //內圓圈
+  .progress-bar-custom .step::after {
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    z-index: 1;
+    top: 50%; // 置中用
+    left: 50%; // 置中用
+    transform: translate(-50%, -50%); // 完全置中
+  }
+
+  //打勾勾圖片
+  .progress-bar-custom img {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+  }
+}

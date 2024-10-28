@@ -1,0 +1,7 @@
+ //垂直文字
+ .vertical-text {
+   writing-mode: vertical-rl;
+   text-orientation: mixed;
+   overflow-y: hidden;
+   /* 防止文字溢出 */
+ }

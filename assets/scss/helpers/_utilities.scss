@@ -1,0 +1,15 @@
+$utilities: map-merge($utilities,
+    ("border": map-merge(map-get($utilities, "border"),
+        (responsive: true)),
+
+      "text-align": (responsive: true,
+        property: text-align,
+        class: text-align,
+        values: (start: left,
+          end: right,
+          center: center,
+          justify: justify // 新增 justify
+        )),
+
+      
+    ));

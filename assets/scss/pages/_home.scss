@@ -1,0 +1,30 @@
+#home-cover {
+  .home-image-cover {
+    background-image: url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 496px;
+  }
+
+  .home-image-style {
+    background-position: center;
+    background-size: cover;
+    height: 256px;
+    filter: blur(5px);
+    //模糊效果
+    margin: -5px;
+    //重要!讓出空間，避免周邊模糊與半透明
+  }
+
+  .home-image-banner1 {
+    background-image: url(../images/banner-pic1.jpg);
+  }
+
+  .home-image-banner2 {
+    background-image: url(../images/banner-pic2.jpg);
+  }
+
+  .home-image-banner3 {
+    background-image: url(../images/banner-pic3.jpg);
+  }
+}

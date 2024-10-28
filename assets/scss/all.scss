@@ -1,0 +1,39 @@
+//一定要放最前面!
+@import "../../node_modules/bootstrap/scss/functions";
+
+//my reset
+@import './base/reset';
+
+//原生variables
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+//載入自訂義變數
+@import "./helpers/variables";
+
+// 導入 Bootstrap mixins
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+//原生utilities
+@import "../../node_modules/bootstrap/scss/utilities";
+//載入自訂義通用類別
+@import "./helpers/utilities";
+
+//import bootstrap 載入bootstrap環境
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+//組件
+@import './components/body-settings.scss';
+@import './components/vertical-text';
+@import './components/focus-ring';
+
+//頁面
+@import './pages/home';
+@import './pages/product';
+@import './pages/login';
+@import './pages/cart';
+@import './pages/checkout-1';
+@import './pages/checkout-2';
+@import './pages/checkout-3';
+@import './pages/checkout-success.scss';
+
