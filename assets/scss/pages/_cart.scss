@@ -9,33 +9,42 @@
       background-color: $brand-dark;
       border: none;
     }
-  }
 
-  .product {
-    .list-group-item {
-      border: none;
-
-      img {
-        width: 110px;
-        height: 110px;
-        object-fit: cover;
-        object-position: center;
+    @media (min-width: 576px) {
+      .list-group-item {
+        color: $brand-dark;
+        background-color: $white;
       }
-
-      .form-control,
-      button {
-        width: 48px;
-        height: 48px;
-      }
-
-      button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-
     }
   }
+
+}
+
+.product {
+  .list-group-item {
+    border: none;
+
+    img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .form-control,
+    button {
+      width: 48px;
+      height: 48px;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+  }
+}
 
 }

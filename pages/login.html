@@ -15,55 +15,73 @@
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
     <!-- my css  -->
     <link rel="stylesheet" href="../assets/css/all.css" />
-    <title>甜點商品</title>
+    <title>登入</title>
   </head>
 
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg bg-white my-4">
+      <nav class="navbar navbar-expand-lg bg-white my-md-4 my-6">
         <!-- bs預設容器container-lg限縮x軸 -->
-        <div class="container-lg">
-          <a class="navbar-brand d-block" href="./home.html">
-            <img src="../assets/images/logo-all-dark.svg" alt="" height="40px" />
-          </a>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-lg d-flex align-items-center justify-content-between">
+          <button class="navbar-toggler border-0 text-brand-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <!-- ms=margin start -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
-              <li class="nav-item me-8">
+          <a class="navbar-brand mx-auto mx-sm-0" href="./home.html">
+            <img src="../assets/images/logo-all-dark.svg" alt="大logo" class="d-sm-block d-none" height="40px" />
+            <img src="../assets/images/logotype-lg-dark.svg" alt="小logo" class="d-sm-none d-block" height="20px" />
+          </a>
+
+          <div class="collapse navbar-collapse justify-content-end order-1" id="navbarSupportedContent">
+            <ul class="navbar-nav my-4 d-flex text-align-center fs-3">
+              <li class="nav-item me-lg-10">
                 <a class="nav-link text-brand-dark fs-1 fw-semibold" aria-current="page" href="./home.html">首頁 </a>
               </li>
 
-              <li class="nav-item me-8">
+              <li class="nav-item me-lg-10">
                 <a class="nav-link text-brand-dark fs-1 fw-semibold" href="./product.html">甜點</a>
               </li>
 
-              <li class="nav-item me-8">
+              <li class="nav-item me-lg-10">
                 <a class="nav-link text-brand-dark fs-1 fw-semibold" href="./login.html">登入</a>
-              </li>
-
-              <li class="nav-item">
-                <a class="nav-link nav-link-cart fw-semibold text-brand-dark d-flex" href="./cart.html">
-                  <span class="material-symbols-outlined"> shopping_cart </span>
-                </a>
               </li>
             </ul>
           </div>
+
+          <a class="nav-link nav-link-cart fw-semibold text-brand-dark d-flex p-25 order-lg-2" href="./cart.html">
+            <span class="material-symbols-outlined"> shopping_cart </span>
+          </a>
         </div>
       </nav>
     </header>
 
     <section class="login my-9">
-      <div class="container-lg">
+      <div class="container-lg px-md-25 px-0">
         <div class="row justify-content-center g-0">
-          <div class="col-10">
-            <div class="row g-0">
-              <div class="col-6">
-                <h1 class="bg-brand-dark text-brand-light fw-bold text-align-center py-7 mb-0">會員登入</h1>
+          <div class="col-md-10">
+            <div class="row g-0 d-flex flex-md-row flex-column">
+              <div class="col-md-6 col-12">
+                <h1 class="bg-brand-dark text-brand-light fw-bold text-align-center py-7 mb-0 order-1">會員登入</h1>
+
+                <div class="col-md-6 col-12 bg-brand-light text-brand px-6 py-7 order-md-3 d-md-none d-block">
+                  <h2 class="d-sm-block d-none fw-light text-align-center pb-7 mb-0">
+                    <span class="d-none d-lg-inline">—— </span>
+                    連結社群帳號
+                    <span class="d-none d-lg-inline"> ——</span>
+                  </h2>
+                  <div class="d-flex flex-sm-column flex-row justify-content-center gap-sm-4 gap-0" role="group" aria-label="連結社群帳號">
+                    <button type="button" class="btn btn-white btn-sns">
+                      <img src="../assets/images/logo-facebook-lg.svg" width="108" height="20" alt="facebook logo" />
+                    </button>
+                    <button type="button" class="btn btn-white btn-sns border-sm-0 border-start border-end">
+                      <img src="../assets/images/logo-google-lg.svg" width="95" height="30" alt="google logo" />
+                    </button>
+                    <button type="button" class="btn btn-white btn-sns">
+                      <img src="../assets/images/logo-yahoo-lg.svg" width="97" height="24" alt="yahoo logo" />
+                    </button>
+                  </div>
+                </div>
+
                 <form action="">
                   <div class="bg-brand-dark px-6 py-4">
                     <div class="input-group mb-3">
@@ -90,7 +108,7 @@
                 </form>
               </div>
 
-              <div class="col-6 bg-brand-light text-brand px-6 py-7 my-4">
+              <div class="col-md-6 col-12 bg-brand-light text-brand px-6 py-7 my-4 order-md-3 d-md-block d-none">
                 <h2 class="d-block fw-light text-align-center pb-7 mb-0">
                   <span class="d-none d-lg-inline">—— </span>
                   連結社群帳號
@@ -118,11 +136,11 @@
       <div class="py-6 bg-brand-dark">
         <div class="container-lg">
           <div class="row justify-content-center align-items-center">
-            <div class="col-lg-5 text-start">
+            <div class="col-lg-5 d-flex justify-content-lg-start justify-content-center align-items-center mb-lg-0 mb-6">
               <img src="../assets/images/logo-light.svg" alt="" width="40px" height="40px" />
               <span class="text-brand-light fs-3 ms-4 align-middle">訂閱你我的甜蜜郵件</span>
             </div>
-            <div class="col-lg-5">
+            <div class="col-lg-5 px-lg-0 px-6">
               <div class="input-group">
                 <btn class="btn btn-brand-light rounded-0 py-3 px-4 d-flex align-items-center justify-content-center">
                   <i class="bi bi-envelope-fill text-brand-dark fs-4"></i>
@@ -138,12 +156,12 @@
       </div>
 
       <div class="py-6 bg-brand-light">
-        <div class="container-lg">
+        <div class="container-md">
           <div class="row d-flex flex-column justify-content-center align-items-center">
-            <div class="container d-flex justify-content-center">
+            <div class="container d-flex justify-content-lg-center justify-content-sm-between px-lg-0 px-sm-6">
               <div class="col-lg-5 d-flex flex-column align-items-start">
-                <img src="../assets/images/logotype-lg-dark.svg" alt="" width="172px" height="26px" />
-                <ul class="text-brand-dark fs-1 mt-auto">
+                <img src="../assets/images/logotype-lg-dark.svg" alt="sweet taste" width="172px" height="26px" />
+                <ul class="text-brand-dark fs-1 mt-sm-auto mt-6 px-0">
                   <li>07-1234-5678</li>
                   <li>sweetaste@email.com</li>
                   <li>800 高雄市新興區幸福路 520 號</li>
@@ -151,10 +169,11 @@
               </div>
 
               <div class="col-lg-5 d-flex justify-content-end">
-                <img src="../assets/images/q4-footer.svg" alt="" width="60px" />
+                <img src="../assets/images/q4-footer.svg" alt="" width="60px" class="d-sm-block d-none" />
               </div>
             </div>
-            <div class="container d-flex justify-content-center text-brand-dark my-6">
+
+            <div class="container text-brand-dark d-flex justify-content-lg-center justify-content-sm-between flex-sm-row flex-column px-lg-0 px-sm-6 my-6">
               <nav class="col-lg-5 d-flex column-gap-2">
                 <a href="#" target="_blank">
                   <img src="../assets/images/ic-line@.svg" alt="" height="32px" />
@@ -163,7 +182,7 @@
                   <img src="../assets/images/ic-facebook.svg" alt="" height="32px" />
                 </a>
               </nav>
-              <p class="col-lg-5 d-flex align-items-center justify-content-end">© 2018 Sweetaste* All Rights Reserved</p>
+              <p class="col-lg-5 d-flex align-items-end justify-content-sm-end justify-content-start mt-6 mb-0">© 2018 Sweetaste* All Rights Reserved</p>
             </div>
           </div>
         </div>
@@ -171,6 +190,6 @@
     </footer>
 
     <!-- bootstrap js -->
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

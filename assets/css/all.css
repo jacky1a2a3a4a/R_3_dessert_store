@@ -18305,6 +18305,12 @@ body {
   background-color: #3f5d45;
   border: none;
 }
+@media (min-width: 576px) {
+  .cart .bill .list-group-item .list-group-item {
+    color: #3f5d45;
+    background-color: #ffffff;
+  }
+}
 .cart .product .list-group-item {
   border: none;
 }
