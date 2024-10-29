@@ -1,1 +1,7 @@
-/node_modules
+# 忽略所有 node_modules 中的內容
+node_modules/*
+
+# 保留 bootstrap-icons 文件夾和 bootstrap.bundle.min.js 文件
+!node_modules/bootstrap-icons
+!node_modules/bootstrap/dist/js/bootstrap.bundle.min.js
+
