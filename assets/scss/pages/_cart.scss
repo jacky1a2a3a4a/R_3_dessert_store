@@ -4,47 +4,64 @@
   }
 
   .bill {
+    .bill-container {
+      background-color: $white
+    }
+
+    h2 {
+      background-color: $brand-light;
+      color: $brand-dark;
+      border-bottom: 0;
+    }
+
     .list-group-item {
-      color: $white;
-      background-color: $brand-dark;
+      color: $brand-dark;
       border: none;
     }
 
-    @media (min-width: 576px) {
+    @media (min-width:576px) {
+      .bill-container {
+        background-color: $brand-dark;
+      }
+
+      h2 {
+        background-color: transparent;
+        color: $white;
+        border-bottom: 1px solid;
+      }
+
       .list-group-item {
-        color: $brand-dark;
-        background-color: $white;
+        background-color: $brand-dark;
+        color: $white;
       }
     }
-  }
-
-}
-
-.product {
-  .list-group-item {
-    border: none;
-
-    img {
-      width: 110px;
-      height: 110px;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    .form-control,
-    button {
-      width: 48px;
-      height: 48px;
-    }
-
-    button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
 
   }
-}
 
+  .product {
+    .list-group-item {
+      border: none;
+
+      img {
+        width: 110px;
+        height: 110px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .form-control,
+      button {
+        width: 48px;
+        height: 48px;
+      }
+
+      button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+    }
+  }
 }
