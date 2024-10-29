@@ -27,4 +27,19 @@
   .home-image-banner3 {
     background-image: url(../images/banner-pic3.jpg);
   }
+
+  //把外面容器的hover狀態當成一個父元素，這樣父容器啟動hover時可以同時變化子元素的hover狀態
+  button:hover {
+    background-color: transparent;
+  }
+
+  button:hover .home-image-bg {
+    background-color: $sub-brand !important;
+  }
+
+  button:hover .home-image-text {
+    color: $brand-dark !important;
+  }
+
+  //
 }

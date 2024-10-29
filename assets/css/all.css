@@ -18694,6 +18694,15 @@ body {
 #home-cover .home-image-banner3 {
   background-image: url(../images/banner-pic3.jpg);
 }
+#home-cover button:hover {
+  background-color: transparent;
+}
+#home-cover button:hover .home-image-bg {
+  background-color: #ffe180 !important;
+}
+#home-cover button:hover .home-image-text {
+  color: #3f5d45 !important;
+}
 
 .product-cover .h-277 {
   height: 277px;
