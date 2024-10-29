@@ -55,9 +55,9 @@
       </nav>
     </header>
 
-    <section id="checkout-success" class="mb-10">
-      <div class="container-lg">
-        <div class="row d-flex justify-content-center checkout-success-cover">
+    <section id="checkout-success" class="mb-sm-10">
+      <div class="container-lg px-sm-25 px-0">
+        <div class="row d-flex justify-content-center align-items-center checkout-success-cover">
           <div class="col-4 d-flex flex-column justify-content-center align-items-center">
             <div class="progress-bar-custom d-flex justify-content-between p-0 mb-6" style="width: 190px">
               <div>
@@ -70,12 +70,16 @@
                 <img src="../assets/images/check-light.png" alt="" />
               </div>
             </div>
-            <img src="../assets/images/q5-checkout.svg" alt="" class="checkout-success-img mb-8" style="width: 190px" />
-            <a href="./home.html" class="w-100">
+            <img src="../assets/images/q5-checkout.svg" alt="" class="checkout-success-img mb-8" style="width: 190px; max-width: none;" />
+            <a href="./home.html" class="w-100 d-sm-block d-none">
               <button class="btn btn-sub-brand text-brand-dark fs-3 fw-bold py-3 w-100" type="button" href="#">繼續逛逛</button>
             </a>
           </div>
         </div>
+
+        <a href="./home.html" class="w-100 d-sm-none d-block">
+          <button class="btn btn-sub-brand text-brand-dark fs-3 fw-bold py-3 w-100" type="button" href="#">繼續逛逛</button>
+        </a>
       </div>
     </section>
 
@@ -116,10 +120,10 @@
               </div>
 
               <div class="col-lg-5 d-flex justify-content-end">
-                <img src="../assets/images/q4-footer.svg" alt="" width="60px" class="d-sm-block d-none"/>
+                <img src="../assets/images/q4-footer.svg" alt="" width="60px" class="d-sm-block d-none" />
               </div>
             </div>
-            
+
             <div class="container text-brand-dark d-flex justify-content-lg-center justify-content-sm-between flex-sm-row flex-column px-lg-0 px-sm-6 my-6">
               <nav class="col-lg-5 d-flex column-gap-2">
                 <a href="#" target="_blank">
