@@ -1,0 +1,42 @@
+header {
+  .navbar {
+    --bs-navbar-toggler-focus-width: 0;
+  }
+}
+
+footer {
+  .form-control:focus {
+    border: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+  }
+}
+
+.form-control:focus,
+.form-check-input:focus,
+.form-select:focus {
+  border: 0;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25);
+}
+
+.form-select option {
+  background-color: $brand-light;
+}
+
+.form-check-input:checked {
+  background-color: $brand;
+}
+
+.btn-check:checked+.btn,
+:not(.btn-check)+.btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show {
+  border: 0;
+  border-color: transparent;
+}
+
+.card-footer:hover {
+  filter: opacity(85%);//透明度85%
+  //background-color: $brand !important;
+  cursor: pointer; //讓滑鼠移過去時變成手指圖示
+}
