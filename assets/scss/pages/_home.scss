@@ -35,11 +35,11 @@
 
   button:hover .home-image-bg {
     background-color: $sub-brand !important;
+    transition: all 0.3s ease-in-out;
   }
 
   button:hover .home-image-text {
     color: $brand-dark !important;
+    transition: all 0.3s ease-in-out;
   }
-
-  //
 }

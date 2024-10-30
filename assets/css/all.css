@@ -18663,9 +18663,9 @@ body {
 
 .vertical-text {
   writing-mode: vertical-rl;
-  text-orientation: mixed;
-  overflow-y: hidden;
-  /* 防止文字溢出 */
+  text-orientation: upright;
+  height: 100%;
+  letter-spacing: -1px;
 }
 
 :focus {
@@ -18699,9 +18699,11 @@ body {
 }
 #home-cover button:hover .home-image-bg {
   background-color: #ffe180 !important;
+  transition: all 0.3s ease-in-out;
 }
 #home-cover button:hover .home-image-text {
   color: #3f5d45 !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .product-cover .h-277 {
