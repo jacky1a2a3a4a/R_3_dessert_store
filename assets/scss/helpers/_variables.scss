@@ -109,11 +109,11 @@ $font-sizes: (
 
 // Grid breakpoints
 $grid-breakpoints: (
-xs: 0,
-sm: 576px,
-md: 768px,
-lg: 992px,
-xl: 1200px,
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
 );
 // Grid breakpoints
 
@@ -126,21 +126,3 @@ $container-max-widths: (
 );
 // Grid containers
 
-//custom letter-spacing utilities
-$letter-spacings: (
-  '0': 0,
-  'sm': 5px,
-  'lg': 8px
-);
-
-@mixin generate-letter-spacing-utilities($spacings) {
-  @each $name, $value in $spacings {
-    .ls-#{$name} {
-      letter-spacing: $value;
-    }
-  }
-}
-
-// 引用 Mixin，生成相關的 letter-spacing 類別
-@include generate-letter-spacing-utilities($letter-spacings);
-//custom letter-spacing utilities

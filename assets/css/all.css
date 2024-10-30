@@ -184,6 +184,10 @@ button {
   letter-spacing: 0;
 }
 
+.ls-xs {
+  letter-spacing: -1px;
+}
+
 .ls-sm {
   letter-spacing: 5px;
 }
@@ -18665,7 +18669,6 @@ body {
   writing-mode: vertical-rl;
   text-orientation: upright;
   height: 100%;
-  letter-spacing: -1px;
 }
 
 :focus {

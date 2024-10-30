@@ -13,6 +13,28 @@ $utilities: map-merge($utilities,
 
     ));
 
+
+//custom letter-spacing utilities
+//創建新屬性
+$letter-spacings: (
+  '0': 0,
+  'xs': -1px,
+  'sm': 5px,
+  'lg': 8px
+);
+
+@mixin generate-letter-spacing-utilities($spacings) {
+  @each $name, $value in $spacings {
+    .ls-#{$name} {
+      letter-spacing: $value;
+    }
+  }
+}
+
+// 引用 Mixin，生成相關的 letter-spacing 類別
+@include generate-letter-spacing-utilities($letter-spacings);
+//custom letter-spacing utilities
+
 // 生成響應式顏色類
 //目前問題:最小尺寸的樣式會覆蓋掉其他尺寸的樣式，暫時無法使用
 @each $breakpoint in map-keys($grid-breakpoints) {
@@ -30,3 +52,4 @@ $utilities: map-merge($utilities,
     }
   }
 }
+// 生成響應式顏色類
