@@ -27,12 +27,6 @@ $enable-negative-margins: true;
 $enable-rounded: false;
 //disable rounded
 
-$focus-ring-width: .25rem;
-$focus-ring-opacity: .25;
-$focus-ring-color: rgba($primary, $focus-ring-opacity);
-$focus-ring-blur: 0;
-$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width red;
-
 //spacers
 $custom-spacers: (
   sm: 1px,

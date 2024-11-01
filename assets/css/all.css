@@ -180,22 +180,6 @@ button {
   outline: inherit;
 }
 
-.ls-0 {
-  letter-spacing: 0;
-}
-
-.ls-xs {
-  letter-spacing: -1px;
-}
-
-.ls-sm {
-  letter-spacing: 5px;
-}
-
-.ls-lg {
-  letter-spacing: 8px;
-}
-
 .bg-primary {
   background-color: #0d6efd !important;
 }
@@ -11759,6 +11743,22 @@ textarea.form-control-lg {
   z-index: 3 !important;
 }
 
+.ls-0 {
+  letter-spacing: 0 !important;
+}
+
+.ls-xs {
+  letter-spacing: -1px !important;
+}
+
+.ls-sm {
+  letter-spacing: 5px !important;
+}
+
+.ls-lg {
+  letter-spacing: 8px !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -13469,6 +13469,18 @@ textarea.form-control-lg {
   }
   .text-align-sm-justify {
     text-align: justify !important;
+  }
+  .ls-sm-0 {
+    letter-spacing: 0 !important;
+  }
+  .ls-sm-xs {
+    letter-spacing: -1px !important;
+  }
+  .ls-sm-sm {
+    letter-spacing: 5px !important;
+  }
+  .ls-sm-lg {
+    letter-spacing: 8px !important;
   }
 }
 @media (min-width: 768px) {
@@ -15182,6 +15194,18 @@ textarea.form-control-lg {
   .text-align-md-justify {
     text-align: justify !important;
   }
+  .ls-md-0 {
+    letter-spacing: 0 !important;
+  }
+  .ls-md-xs {
+    letter-spacing: -1px !important;
+  }
+  .ls-md-sm {
+    letter-spacing: 5px !important;
+  }
+  .ls-md-lg {
+    letter-spacing: 8px !important;
+  }
 }
 @media (min-width: 992px) {
   .float-lg-start {
@@ -16894,6 +16918,18 @@ textarea.form-control-lg {
   .text-align-lg-justify {
     text-align: justify !important;
   }
+  .ls-lg-0 {
+    letter-spacing: 0 !important;
+  }
+  .ls-lg-xs {
+    letter-spacing: -1px !important;
+  }
+  .ls-lg-sm {
+    letter-spacing: 5px !important;
+  }
+  .ls-lg-lg {
+    letter-spacing: 8px !important;
+  }
 }
 @media (min-width: 1200px) {
   .float-xl-start {
@@ -18605,6 +18641,18 @@ textarea.form-control-lg {
   }
   .text-align-xl-justify {
     text-align: justify !important;
+  }
+  .ls-xl-0 {
+    letter-spacing: 0 !important;
+  }
+  .ls-xl-xs {
+    letter-spacing: -1px !important;
+  }
+  .ls-xl-sm {
+    letter-spacing: 5px !important;
+  }
+  .ls-xl-lg {
+    letter-spacing: 8px !important;
   }
 }
 @media (min-width: 1200px) {

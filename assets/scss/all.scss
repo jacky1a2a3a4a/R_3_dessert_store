@@ -25,7 +25,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 //組件
-@import './components/body-settings.scss';
+@import './components/body-settings';
 @import './components/focus_settings';
 @import './components/vertical-text';
 
@@ -37,5 +37,4 @@
 @import './pages/checkout-1';
 @import './pages/checkout-2';
 @import './pages/checkout-3';
-@import './pages/checkout-success.scss';
-
+@import './pages/checkout-success';
