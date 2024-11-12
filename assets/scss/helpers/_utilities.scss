@@ -11,5 +11,33 @@ $utilities: map-merge($utilities,
           justify: justify // 新增 justify
         )),
 
-      
+      // 新增 letter-spacing 工具
+      "letter-spacing": (responsive: true,
+        property: letter-spacing,
+        class: ls,
+        values: ('0': 0,
+          'xs': -1px,
+          'sm': 5px,
+          'lg': 8px)),
     ));
+
+
+// 生成響應式顏色類
+//目前問題:最小尺寸的樣式會覆蓋掉其他尺寸的樣式，暫時無法使用
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @each $color, $value in $theme-colors {
+      .bg#{$infix}-#{$color} {
+        background-color: $value !important;
+      }
+
+      .text#{$infix}-#{$color} {
+        color: $value !important;
+      }
+    }
+  }
+}
+
+// 生成響應式顏色類

@@ -4,11 +4,38 @@
   }
 
   .bill {
+    .bill-container {
+      background-color: $white
+    }
+
+    h2 {
+      background-color: $brand-light;
+      color: $brand-dark;
+      border-bottom: 0;
+    }
+
     .list-group-item {
-      color: $white;
-      background-color: $brand-dark;
+      color: $brand-dark;
       border: none;
     }
+
+    @media (min-width:576px) {
+      .bill-container {
+        background-color: $brand-dark;
+      }
+
+      h2 {
+        background-color: transparent;
+        color: $white;
+        border-bottom: 1px solid;
+      }
+
+      .list-group-item {
+        background-color: $brand-dark;
+        color: $white;
+      }
+    }
+
   }
 
   .product {
@@ -37,5 +64,4 @@
 
     }
   }
-
 }

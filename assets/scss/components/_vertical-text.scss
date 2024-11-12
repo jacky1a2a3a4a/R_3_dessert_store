@@ -1,7 +1,7 @@
  //垂直文字
  .vertical-text {
    writing-mode: vertical-rl;
-   text-orientation: mixed;
-   overflow-y: hidden;
-   /* 防止文字溢出 */
+   //處理混合文字（如英文、數字與日文/中文混排）時的顯示方向
+   text-orientation: upright;
+   height: 100%;
  }
